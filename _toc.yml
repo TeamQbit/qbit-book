@@ -4,21 +4,15 @@ format: jb-book
 root: content/intro  # The root file of your book
 
 parts:
-  - caption: ნაწილი I
+  - caption: "ნაწილი I"
     chapters:
       - file: content/part1/main
-      
-  - caption: ნაწილი II
-    chapters:
-      - file: content/part2/main
-
-  - caption: ნაწილი III
-    chapters:
-      - file: content/part3/main
-
-
-  - caption: ნაწილი IV
-    chapters:
-      - file: content/part4/main
-
-
+      - file: content/part1/notes
+      - file: content/part1/exercises/main
+        sections:
+          - file: content/part1/exercises/foodCollect
+          - file: content/part1/exercises/schoolBuilder
+          - file: content/part1/exercises/fixBridge
+          - file: content/part1/exercises/elections
+          - file: content/part1/exercises/doubleKarlo
+      - file: content/part1/playground

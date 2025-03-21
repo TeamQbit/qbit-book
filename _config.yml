@@ -1,6 +1,6 @@
 # Book Configuration
-title: "Qubit Book"           # Book title
-author: "Your Name"           # Author name
+title: "QBit Book"           # Book title
+author: "QBit Team"           # Author name
 logo: "content/figures/qbit.png"  # Logo
 execute:
   execute_notebooks: "auto"   # Run notebooks during build
@@ -14,10 +14,6 @@ html:
     options:
       logo_only: true
       home_page_in_toc: true
-
-# Bibliography
-bibtex_bibfiles:
-  - content/references.bib
 
 # Additional settings
 sphinx:

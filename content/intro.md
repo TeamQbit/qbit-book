@@ -4,13 +4,11 @@
 თითოეული კვირა მოიცავს ლექციებს, პრაქტიკულ დავალებებსა და დამატებით მასალებს, 
 რომლებიც დაგეხმარებათ თეორიული ცოდნის პრაქტიკულ გამოყენებაში.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bj1niQIqQPY?si=rwUT7UonfDEA4O8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## კურსის სტრუქტურა
 
-- **ნაწილი I**: რა არის კომპიუტერი? ინფორმაცია? კარლოს პროგრამირება.
-- **ნაწილი II**: Java საფუძვლები, მასივები, ფუნქციები, ციკლები, ა.შ.
-- **ნაწილი III**: რეკურსია, ალგორითმები, 2D მასივები, საბაზისო ასიმპტოტური ანალიზი
-- **ნაწილი IV**: პროგრამირების პარადიგმები, მეხსიერება, მონაცემთა სტრუქტურები
-
+- **ნაწილი I**: ინფორმაცია. კარლოს პროგრამირება.
 
 ## კურსის კომპონენტები:
 
