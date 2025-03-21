@@ -6,10 +6,11 @@ root: content/intro  # The root file of your book
 parts:
   - caption: "ნაწილი I"
     chapters:
-      - file: content/part1/main
-      - file: content/part1/notes
+      - file: content/part1/lecture
       - file: content/part1/exercises/main
         sections:
+          - file: content/part1/exercises/ghost
+          - file: content/part1/exercises/voyager  
           - file: content/part1/exercises/foodCollect
           - file: content/part1/exercises/schoolBuilder
           - file: content/part1/exercises/fixBridge
