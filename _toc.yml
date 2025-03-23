@@ -1,7 +1,6 @@
-# Table of Contents
 format: jb-book
 
-root: content/intro  # The root file of your book
+root: content/intro
 
 parts:
   - caption: "ნაწილი I"
