@@ -4,7 +4,7 @@
 თითოეული კვირა მოიცავს ლექციებს, პრაქტიკულ დავალებებსა და დამატებით მასალებს, 
 რომლებიც დაგეხმარებათ თეორიული ცოდნის პრაქტიკულ გამოყენებაში.
 
-<iframe width="100%" height="500px" src="https://www.youtube.com/embed/Bj1niQIqQPY?si=rwUT7UonfDEA4O8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G0CIgVu8idk?si=PbKgiIsJtFp4TQuU" title="Intro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## კურსის სტრუქტურა
 
@@ -16,4 +16,4 @@
 - პრაქტიკული დავალებები
 - სასწავლო რესურსები
 
-მზად ხართ? დავიწყოთ!
+მზად ხართ? დავიწყოთ! 
