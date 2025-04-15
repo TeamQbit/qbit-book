@@ -15,6 +15,7 @@ parts:
           - file: content/part1/exercises/fixBridge
           - file: content/part1/exercises/elections
           - file: content/part1/exercises/doubleKarlo
+          - file: content/part1/exercises/solutions
       - file: content/part1/playground
   - caption: "ნაწილი II"
     chapters:
