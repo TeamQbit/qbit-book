@@ -20,3 +20,12 @@ parts:
   - caption: "ნაწილი II"
     chapters:
       - file: content/part2/lecture
+  - caption: "ნაწილი III"
+    chapters:
+      - file: content/part3/lecture
+      - file: content/part3/exercises/main
+        sections:
+          - file: content/part3/exercises/library
+          - file: content/part3/exercises/animals
+          - file: content/part3/exercises/bank
+      - file: content/part3/snippets
