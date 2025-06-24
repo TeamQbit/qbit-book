@@ -29,3 +29,10 @@ parts:
           - file: content/part3/exercises/animals
           - file: content/part3/exercises/bank
       - file: content/part3/snippets
+  - caption: "ნაწილი IV"
+    chapters:
+      - file: content/part4/lecture
+  - caption: "ნაწილი V"
+    chapters:
+      - file: content/part5/lecture1
+      - file: content/part5/lecture2
