@@ -2,7 +2,7 @@
 
 ### ჩვენი პროგრამირების ენა “ქუბიტი”
 
-<iframe width="560" height="315" src="https://youtu.be/5MtauKEgRiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5MtauKEgRiI?si=r5EsMtN8XbQaqRe7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ### გამარჯობა, ლექციის მიმოხილვა
