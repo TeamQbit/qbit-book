@@ -41,7 +41,6 @@ parts:
       - file: content/part6/lecture
       - file: content/part6/exercises/main
         sections:
-          - file: content/part6/exercises/main
           - file: content/part6/exercises/extend-grammar
           - file: content/part6/exercises/syntax-detective
           - file: content/part6/exercises/take-compiler-role
