@@ -1,0 +1,977 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1.2 ქართული ვოიაჟერი &#8212; QBit Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/part1/exercises/voyager';</script>
+    <link rel="icon" href="../../../_static/qbit.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="2.1 ჩაიბარე ამანათი" href="foodCollect.html" />
+    <link rel="prev" title="1.1 კოდი მოჩვენებისგან" href="ghost.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/qbit.png" class="logo__image only-light" alt="QBit Book - Home"/>
+    <script>document.write(`<img src="../../../_static/qbit.png" class="logo__image only-dark" alt="QBit Book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    გამარჯობა, სამყარო!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">ნაწილი I</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture.html">ლექცია</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="main.html">დავალებები</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ghost.html">1.1 კოდი მოჩვენებისგან</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.2 ქართული ვოიაჟერი</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foodCollect.html">2.1 ჩაიბარე ამანათი</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schoolBuilder.html">2.2 ააშენე სკოლები</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fixBridge.html">2.3 ხიდის შეკეთება</a></li>
+<li class="toctree-l2"><a class="reference internal" href="elections.html">2.4 არჩევნები</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doubleKarlo.html">2.5 გააორმაგე აგურები</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solutions.html">პასუხები</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../playground.html">კარლოს დოკუმენტაცია</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ნაწილი II</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../part2/lecture.html">ლექცია</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ნაწილი III</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../part3/lecture.html">ლექცია</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../part3/exercises/main.html">დავალებები</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../part3/exercises/library.html">1. ბიბლიოთეკა</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../part3/exercises/animals.html">2. ცხოველები</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../part3/exercises/bank.html">3. ბანკი</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../part3/snippets.html">გამოყენებული კოდი</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ნაწილი IV</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../part4/lecture.html">ლექცია</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ნაწილი V</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../part5/lecture1.html">ლექცია (ნაწ. I)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../part5/lecture2.html">ლექცია (ნაწ. II)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ნაწილი VI</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../part6/lecture.html">ლექცია</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../part6/exercises/main.html">დავალებები</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../part6/exercises/extend-grammar.html">1. განავრცე გრამატიკა</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../part6/exercises/syntax-detective.html">2. სინტაქსური დეტექტივი</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../part6/exercises/take-compiler-role.html">3. აითვისე კომპილატორის როლი</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/part1/exercises/voyager.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>1.2 ქართული ვოიაჟერი</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">შესავალი</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ოქროს ფირფიტა</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">ქართული ვოიაჟერი!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">დავალება</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1. ჩაკრულოს ფრაგმენტი</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">მოიცა, აუდიო როგორ გამოვსახო?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.1 ამოიწერე ნიმუშები ათობით სისტემაში</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.2 ორობითში გადაყვანა</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">უარყოფითი რიცხვების გამოსახვა</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#s-complement-representation">2’s Complement Representation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">2. ტექსტი</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">UNICODE მუშაობის პრინციპი</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hexadecimal">თექვსმეტობითი სისტემა (Hexadecimal)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">2.1 ამოწერე სიტყვები UNICODE სისტემის დახმარებით</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">ბონუს ცოდნა</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">3.  დროშის სურათი</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rgb">3.1 დაწერე პირველი მწკრივის RGB მონაცემები.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">3.2 ინფორმაციის კომპრესირება</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">3.3 კიდევ უფრო კომპრესირება!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">მზად არის!</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>1.2 ქართული ვოიაჟერი<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>შესავალი<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>1977 წელს <strong>NASA</strong> _მ გაგზავნა ორი კოსმოსური ზონდი - ვოიაჟერ 1 და ვოიაჟერ 2. ისინი მუდმივად მოძრაობენ კოსმოსში და 2012 წელს მზის სისტემასაც კი გასცდნენ.</p>
+<p><img alt="Voyager" src="../../../_images/voyager.png" /></p>
+<p>ისინი დღემდე უკავშირებიან სადგურს დედამიწაზე და აწვდიან ინფორმაციას მათი გარემოებების შესახებ.</p>
+</section>
+<section id="id3">
+<h2>ოქროს ფირფიტა<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>სიმბოლურად, ამ ზონდებში ჩადეს “ოქროს ფირფიტები”, რომლებზედაც დატანილია ინფორმაცია კაცობრიობის შესახებ:</p>
+<ul class="simple">
+<li><p>მისალმებები 55 ენაზე.</p></li>
+<li><p>მუსიკა სხვადასხვა ერისა და ეპოქისა, რომელთა შორისაც არის ქართული ხალხური სიმღერა “ჩაკრულო”!</p></li>
+<li><p>ცხოველების, ბუნებისა და სხვა ხმები</p></li>
+<li><p>დედამიწის, ადამიანისა და ფლორა-ფაუნის სურათები</p></li>
+<li><p>მაშინდელი თანამდებობის პირების (გაეროს გენერალური მდივანი და აშშ პრეზიდენტი) მიმართვები.</p></li>
+<li><p>ადამიანის გენომისა და სხვა სამეცნიერო შინაარსის ინფორმაცია</p></li>
+</ul>
+<p><img alt="Golden Plate" src="../../../_images/goldenPlate.png" /></p>
+<p>ზონდები თავისუფლად და უწყვეტად მოძრაობენ კოსმოსში და თუკი გონიერი უცხოპლანეტელი ცივილიზაცია მას წააწყდება, შეეძლება დედამიწის შესახებ ინფორმაციის წაკითხვა. ეს სიმბოლურად გავს წერილიანი ბოთლის ოკეანეში გადაგდებას. მასზე დატანილი ინფორმაცია განსაკუთრებული სისტემებითაა გადმოცემული, რათა ნებისმიერმა მოაზროვნე არსებამ პოტენციურად შეძლოს მისი წაკითხვა.</p>
+</section>
+<section id="id4">
+<h2>ქართული ვოიაჟერი!<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p><strong>NASA</strong>_სა და <strong>QBit</strong>_ს თანამშრომლობით დღეს ჩვენ ვუშვებთ ჩვენს კოსმოსურ ზონდსაც, რომელსაც ასევე გავატანთ ქართულ ოქროს ფირფიტას.</p>
+<p>პირობითად ჩავთვალოთ, რომ უცხო ცივილიზაციას <strong>შეეძლება ბინარული სისტემის გააზრება</strong>. ჩვენ გვინდა ფირფიტაზე ჩავწეროთ:</p>
+<ul class="simple">
+<li><p>სიმღერა “ჩაკრულო”</p></li>
+<li><p>სიტყვები: “გამარჯობა!”, “ხაჭაპური”, “🇬🇪”</p></li>
+<li><p>საქართველოს დროშის სურათი</p></li>
+</ul>
+<p>დაეხმარე კოსმონავტებს, გადათარგმნონ ინფორმაცია ბინარულ სისტემაში!</p>
+</section>
+<section id="id5">
+<h2>დავალება<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>ჩვენ გვაქვს 3 ტიპის ინფორმაცია, რომელიც უნდა გადავთარგმნოთ:</p>
+<ul class="simple">
+<li><p>ჩაკრულოს ფრაგმენტი</p></li>
+<li><p>3 სიტყვა: “გამარჯობა!”, “ხაჭაპური”, “🇬🇪”</p></li>
+<li><p>საქართველოს დროშის სურათი</p></li>
+</ul>
+<section id="id6">
+<h3>1. ჩაკრულოს ფრაგმენტი<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<section id="id7">
+<h4>მოიცა, აუდიო როგორ გამოვსახო?<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<p>ლექციაზე ჩვენ განვიხილეთ, თუ როგორ გამოგვესახა ტექსტი, ფოტო და ვიდეო, თუმცა, აუდიოს ორობით სისტემაში გამოსახვა არ გვიხსენებია.</p>
+<p>აუდიო რეალურად არის ხმის ტალღები, რომლებიც სივრცეში მოძრაობენ და ამ ტალღებით ჩვენი ყურის ბარაბანზე გამოწვეული ვიბრაციით შევიგრძნობთ ხმას. დინამიკი რეალურად ქმნის ამ ხმის ტალღებს, ხოლო მიკროფონი, როგორც ადამიანის ყური, აფიქსირებს მათ.</p>
+<p><img alt="Wave Form" src="../../../_images/wave_form.png" /></p>
+<p>აუდიოს გამოსახვა კი დაიყვანება ხმის <strong>ტალღის გამოსახვის</strong> პრობლემამდე.</p>
+<p>მოდი ტალღა გამოვსახოთ როგორც ფუნქციის გრაფიკი. კონკრეტულ დროის წერტილში, მას აქვს რაღაც მნიშვნელობა (ამპლიტუდა), ანუ ხმა ან მაღალია ან დაბალი იმ მომენტში.</p>
+<p><img alt="Wave Chart 1" src="../../../_images/wavechart1.png" /></p>
+<p>თუ ჩვენ ამ მნიშვნელობებს ამოვწერთ კონკრეტულ დროის მომენტებში, ჩვენ შევინახავთ ტალღის დაახლოებით ფორმას (<span class="math notranslate nohighlight">\(x\)</span> მომენტში დამრგვალებულ <span class="math notranslate nohighlight">\(f(x)\)</span> მნიშვნელობას):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>ნიმუშის N</p></th>
+<th class="head"><p>1</p></th>
+<th class="head"><p>2</p></th>
+<th class="head"><p>3</p></th>
+<th class="head"><p>4</p></th>
+<th class="head"><p>5</p></th>
+<th class="head"><p>6</p></th>
+<th class="head"><p>7</p></th>
+<th class="head"><p>8</p></th>
+<th class="head"><p>9</p></th>
+<th class="head"><p>10</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ათობითი</p></td>
+<td><p>8</p></td>
+<td><p>3</p></td>
+<td><p>7</p></td>
+<td><p>6</p></td>
+<td><p>9</p></td>
+<td><p>7</p></td>
+<td><p>2</p></td>
+<td><p>6</p></td>
+<td><p>6</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>ორობითი</p></td>
+<td><p>1000</p></td>
+<td><p>0011</p></td>
+<td><p>0111</p></td>
+<td><p>0110</p></td>
+<td><p>1001</p></td>
+<td><p>0111</p></td>
+<td><p>0010</p></td>
+<td><p>0100</p></td>
+<td><p>0110</p></td>
+<td><p>0110</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="Wave Chart 2" src="../../../_images/wavechart2.png" /></p>
+<p>ჩვენ ტალღის დაახლოებითი ფორმა წარმოვადგინეთ რიცხვებად, ანუ გავაციფრულეთ! ჩაწერილი ფორმა (მწვანე) არც ისე ახლოსაა რეალურთან, თუმცა რაც უფრო მოკლე ინტერვალებში ავიღებთ ნიმუშებს, მაშინ ჩვენი ამოწერილი ტალღის ფორმა უფრო მიუახლოვდება რეალურს. მაგალითად, საშუალო ხარისხის აუდიო (CD-quality) შეიცავს 44100 (44.1KH) ნიმუშს ყოველ 1 წამში მოხაზული ტალღის ფორმიდან. ამ ჩაწერილი ტალღის ინფორმაციას უკვე ჩვენი კომპიუტერი ამუშავებს და მას შეუძლია დინამიკით იგივე ამპლიტუდის ტალღები დააგენერიროს! ჩვენი საყვარელი მუსიკების ფაილები (.mp3, .wav, ა.შ) რეალურად ხმის ტალღების ამოწერილი ვერსიებია.</p>
+<p>თანამედროვე აუდიო შედგება მილიონობით ამოწერილი ნიმუშებისგან (44000+ ამოწერილი ტალღის წერტილი წამში), ამიტომ მთლიანი ჩაკრულოს ხელით ამოწერა რთული იქნება (მით უმეტეს 7 ხმაში…)</p>
+<p>ამჯერად ჩვენ გადავთარგმნოთ ბინარულ სისტემაში აუდიოს პატარა ფრაგმენტი. დანარჩენის გასაკეთებლად მომავალში კომპიუტერი დავაპროგრამოთ რომ ეს საქმე ჩვენთვის გააკეთოს.</p>
+<p><img alt="Chakrulo Chart" src="../../../_images/chakrulo.png" /></p>
+<p>ეს არის პირობითი ნაწყვეტი ჩაკრულოს ერთი წამიდან (0:00 - 0:01), სადაც ტალღის ამპლიტუდა მოძრაობს [-128:127] დიაპაზონში.</p>
+</section>
+<section id="id8">
+<h4>1.1 ამოიწერე ნიმუშები ათობით სისტემაში<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<p>აიღე ტალღის ნიმუშები, ანუ ამოიწერე დაახლოებით რა არის ტალღის ამპლიტუდა <span class="math notranslate nohighlight">\(x \in [0, 1]\)</span>  <span class="math notranslate nohighlight">\(f(x) \in [-128:127]\)</span> შუალედში, 0,2 წამის ინტერვალით.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>დრო (წმ)</p></th>
+<th class="head"><p>ამპლიტუდა</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0.0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>0.2</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>0.4</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>0.6</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>0.8</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>1.0</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id9">
+<h4>1.2 ორობითში გადაყვანა<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<p>ახლა ამპლიტუდის მნიშვნელობები გადავიყვანოთ ორობით სისტემაში, მაგრამ, როგორ გადავიყვანოთ უარყოფითი რიცხვები ორობითში?</p>
+<section id="id10">
+<h5>უარყოფითი რიცხვების გამოსახვა<a class="headerlink" href="#id10" title="Link to this heading">#</a></h5>
+<p>ჩვენ ვისწავლეთ თვლა დადებითი მთელი რიცხვებისთვის (ნატურალური რიცხვები):</p>
+<div class="math notranslate nohighlight">
+\[0, 1, 10, 11, 100, 101, 110, 111, 1000...\]</div>
+<p>მაგრამ როგორ გამოვსახოთ უარყოფითი რიცხვები?</p>
+<p>მარტივი ვარიანტი იქნებოდა, გამოგვეყო პირველი ბიტი როგორც ნიშანი:
+0 იყოს დადებითი, 1 იყოს უარყოფითი. ანუ მარცხენა პირველი ბიტი იქნება არა თანრიგის, არამედ ნიშნის გამომსახველი.</p>
+<p>მაგალითად:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\textcolor{green}{0}001_2 = +1_{10} \\ 
+\textcolor{green}{1}001_2 = -1_{10} \\
+\textcolor{green}{0}110_2 = +6_{10} \\
+\textcolor{green}{1}110_2 = -6_{10}
+\end{aligned}
+\end{split}\]</div>
+<p>მაგრამ, აქ არის ერთი პრობლემა:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\textcolor{green}{0}000_2 = +0_{10} \\ 
+\textcolor{green}{1}000_2 = -0_{10}
+\end{aligned}
+\end{split}\]</div>
+<p>ჩვენ გვრჩება 2 ნიშნიანი ნული! ასევე ქვეშმიწერით არითმეტიკას და სხვა მოქმედებებს ასეთი სისტემა მოუხერხებელს ქმნის.</p>
+</section>
+</section>
+<section id="s-complement-representation">
+<h4>2’s Complement Representation<a class="headerlink" href="#s-complement-representation" title="Link to this heading">#</a></h4>
+<p>რეალურად კომპიუტერები იყენებენ “ორის კომპლემენტს”, რომელიც მოსახერხებელს ხდის ანგარიშს და არ გვაქვს <span class="math notranslate nohighlight">\(\pm0\)</span>.</p>
+<p>არ მკითხოთ, როგორ მოაფიქრდათ, თუმცა ძალიან მოსახერხებელია!</p>
+<ul class="simple">
+<li><p>თუ გვინდა დადებითი რიცხვის ჩაწერა, მაშინ ვწერთ როგორც აქამდე.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+5_{10} = 0101_2
+\]</div>
+<p>მაგრამ -5 იქნება დადებითი ვერსია რომ ამოვატრიალოთ (1 ხდება 0 და 0 ხდება 1) და დავუმატოთ ერთი</p>
+<div class="math notranslate nohighlight">
+\[
+0101_2 \xrightarrow{ამოვატრიალოთ} 1010_2 \xrightarrow{+1} 1010_2 + 1_2 = 1011_{2comp}
+\]</div>
+<p>ანუ</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array} \\
+5_{10} = 0101_2 = 0101_{2comp} \\
+-5_{10} = 1011_{2comp}
+\end{array}
+\end{split}\]</div>
+<p>ამ სისტემაშიც უარყოფითები ერთით იწყება, ხოლო დადებითები ნულით, თუმცა არითმეტიკა მარტივი ხდება: ზუსტად ისე ხდება ანგარიში, როგორც უნიშნო სისტემაში, რომელიც აქამდე ვიცოდით (unsigned integers).</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>ათობითი</p></th>
+<th class="head"><p>8 ბიტიანი ორის კომპლემენტი</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">00000101</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">00000000</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>-1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">11111111</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>-5</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">11111011</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>-128</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">10000000</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>127</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">01111111</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>რიცხვების ჩაწერას, სადაც რიცხვის ნიშანსაც ვითვალისწინებთ (გამოვსახავთ), ქვია <strong>Signed Integers (int)</strong>, ხოლო უნიშნო გამოსახვას <strong>Unsigned Integers (uint)</strong>. უფრო ღრმად ამ თემას დავუბრუნდებით შემდეგ ლექციაზე.</p>
+<hr class="docutils" />
+<p>ახლა კი ამოწერე შენს მიერ შევსებული ცხრილიდან ამპლიტუდის მნიშვნელობები ბინარულ სისტემაში ორის კომპლიმენტით. რამდენი ბიტი დაგჭირდება თითოეული რიცხვისთვის? რატომ არის მაინც და მაინც <span class="math notranslate nohighlight">\([-128:127]\)</span> დიაპაზონი? რამდენი რიცხვია ამ შუალედში?</p>
+</section>
+</section>
+<section id="id11">
+<h3>2. ტექსტი<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<p>ტექსტის კოდირება ვისწავლეთ ASCII საშუალებით, სადაც გვქონდა ცხრილი, რომლის საშუალებით ასოებს გამოვსახავდით ცხრილში მისივე ნომრით. ჩვენ ახლა გვინდა გამოვსახოთ 2 სიტყვა და 1 ემოჯი:</p>
+<ul class="simple">
+<li><p>“გამარჯობა!”</p></li>
+<li><p>“ხაჭაპური”</p></li>
+<li><p>“🇬🇪”</p></li>
+</ul>
+<p>თუმცა ASCII_ში არ არის არც ქართული ასოები, არც ემოჯები. როგორც ლექციაში ვახსენეთ, არსებობს საერთაშორისო ცხრილი <strong>UNICODE</strong>, სადაც გამოსახულია მსოფლიოს ენები, სიმბოლოები და ემოჯები!</p>
+<p>მოდით გამოვიყენოთ UNICODE სიტყვების ჩასაწერად!</p>
+<section id="unicode">
+<h4>UNICODE მუშაობის პრინციპი<a class="headerlink" href="#unicode" title="Link to this heading">#</a></h4>
+<p>იხილეთ <a class="reference external" href="https://symbl.cc/en/unicode-table/#georgian">UNICODE ცხრილი</a>.</p>
+<p>თუმცა აღნიშვნა საკმაოდ უცნაურია. მაგალთად “ა” ცხრილში არის <strong>U+10D0</strong>, რას ნიშნავს ეს?</p>
+<p>U+ ნიშნავს რომ ეს კოდი ეკუთვნის UNICODE ცხრილს, მას სხვა მნიშვნელობა არ აქვს.
+10D0 არის თექვსმეტობითი სისტემით ჩაწერილი რიცხვი (Hexadecimal). რატომ?</p>
+<p>როგორც ASCII ცხრილში, აქაც ჩამონომრილია სიმბოლოები, “ა” ასოს ათობითი ნომერი არის 4304.</p>
+<p>მაგალითად, “A” ASCII ში იყო 65, ანუ ორობითში 0100 0001.</p>
+<p>ორობითში რომ ჩავწეროთ 4304, იქნება <strong>0001 0000 1101 0000</strong>. უფრო დიდ ნომრებს კიდევ მეტი ციფრი დასჭირდება. ამიტომ, ადამიანისთვის მარტივად და მოკლედ ბინარული ინფორმაციის ჩასაწერად ვიყენებთ თექვსმეტობით სისტემას, რომელიც საშუალებას გვაძლებს 4 ბიტი გამოვსახოთ 1 ცალი თექვსმეტობით სისტემის ციფრით.</p>
+</section>
+<section id="hexadecimal">
+<h4>თექვსმეტობითი სისტემა (Hexadecimal)<a class="headerlink" href="#hexadecimal" title="Link to this heading">#</a></h4>
+<p>ათობით სისტემაში გვაქვს 10 ციფრი:</p>
+<div class="math notranslate nohighlight">
+\[0 1 2 3 4 5 6 7 8 9\]</div>
+<p>ორობითში კი 2:</p>
+<div class="math notranslate nohighlight">
+\[01\]</div>
+<p>თექვსმეტობით სისტემის პრინციპი იგივეა, თანრიგები არის 16_ის ხარისხები. რაც შეეხება ციფრებს, გვაქვს 16 ცალი:</p>
+<div class="math notranslate nohighlight">
+\[0 1 2 3 4 5 6 7 8 9 ..\]</div>
+<p>მაგრამ საიდან მოვიტანოთ კიდევ 6?</p>
+<p>ვისესხოთ ინგლისური ასოები a b c d e f და ჩვენი 16 გასნხვავებული ციფრი (სიმბოლო) იქნება:</p>
+<div class="math notranslate nohighlight">
+\[
+0 1 2 3 4 5 6 7 8 9 a b c d e f
+\]</div>
+<p>როგორ გადავიყვანოთ რიცხვი თექვსმეტობითში?</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array} \\
+300_{10} = 1 * 256 + 2 * 16 + 12 * 1 \\
+1 * 16^2 + 2*16^1 + c*16^0 \\
+300_{10} = 12C_{16}
+\end{array}
+\end{split}\]</div>
+<p>C ამ შემთხვევაში წარმოადგენს 12_ს ერთი სიმბოლოთი.</p>
+<p>რაში გვჭირდება? რაც მეტია ფუძე, მით ნაკლები “ციფრი” გვჭირდება. ასევე მოსახერხებელია ორობით სისტემის გამოსახვა თექვსმეტობითში. მისი აღქმა კომპიუტერს არ შეუძლია, იგი მაინც ბინარულში ინახავს და ამუშავებს ინფორმაციას, უბრალოდ იგი ადამიანისთვის ხდება მოსახერხებელი.</p>
+<p>მაგალითად:</p>
+<p>1010 1001 1100 1111 ბინარულიდან რომ გადავიყვანოთ თექვსმეტობითში, ავიღოთ ყოველი 4 ბიტი და ავღნიშნოთ მისი რიცხობრივი მნიშვნელობა თექვსმეტობითის ციფრით</p>
+<p>1010 = 10 ათობითში = A თექვსმეტობითში
+1001 = 9 ათობითში = 9 თექვსმეტობითში
+1100 = 12 ათობითში = C თექვსმეტობითში
+1111 = 15 ათობითში = F თექვსმეტობითში</p>
+<p>ანუ 1010 1001 1100 1111 ორობითში, მოკლედ ჩაიწერება, როგორც: A9CF.</p>
+<p>ეს ხრიკი მუშაობს იმის ხარჯზე რომ თექვსმეტობითის დიაპაზონი არის 0-15, ისევე როგორც 4 ბიტის:</p>
+<p><span class="math notranslate nohighlight">\(0_{10} = 0000_{2} = 0_{16}\)</span>
+<span class="math notranslate nohighlight">\(15_{10} = 1111_2 = F_{16}\)</span></p>
+<p>ანალოგიური პრინციპით ხდება თექვსმეტობითიდან ორობითში გადაყვანაც.</p>
+<p>მაგალითად “ა” კოდი არის U+10D0 ანუ ნომერი 10D0</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array} \\
+1_{16} = 0001_2 \\
+0_{16} = 0000_2 \\
+D_{16} = 1101_2 \\
+0_{16} = 0000_2 \\
+\end{array}
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(10D0_{16} = 0001 \; 0000 \; 1101 \; 0000_2\)</span> ორობითში. ეს სისტემა ძალიან მოსახერხებელია ბინარული ინფორმაციის მოკლედ წარმოსადგენად ადამიანისთვის, რასაც გზა და გზა შევამჩნევთ.</p>
+</section>
+<section id="id12">
+<h4>2.1 ამოწერე სიტყვები UNICODE სისტემის დახმარებით<a class="headerlink" href="#id12" title="Link to this heading">#</a></h4>
+<p>გადათარგმნე სიტყვები UNICODE_ის U+XXXX ფორმატში:</p>
+<ul class="simple">
+<li><p>“გამარჯობა!”</p></li>
+<li><p>“ხაჭაპური”</p></li>
+<li><p>“🇬🇪” (საქართველოს დროშის ემოჯი)</p></li>
+</ul>
+<p>გამოიყენე <a class="reference external" href="https://symbl.cc/en/unicode-table/#georgian">UNICODE ცხრილი</a>.</p>
+<hr class="docutils" />
+<section id="id13">
+<h5>ბონუს ცოდნა<a class="headerlink" href="#id13" title="Link to this heading">#</a></h5>
+<p>*კლასიკური ASCII იყენებს 7 ბიტს, ხოლო მისი გავრცელებული ვერსია 8 ბიტს (Extended ASCII). UNICODE მეტი ბიტების გამოყენების ხარჯზე, შეუძლია შეინახოს ბევრად მეტი სიმბოლოები. იგი იყენებს ცვლადი რაოდენობის ბიტებს: 1, 2, 3 ან 4 ბაიტს!. UNICODE ყველაზე გავრცელებული ვერსია არის UTF-8, რომელიც ბაიტებს შემდეგნაირად ანაწილებს (ჩვენი ტექსტიც ამ სტატიაში იყენებს UTF-8 Encoding სისტემას!):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>სიმბოლოს დიაპაზონი</p></th>
+<th class="head"><p>ბაიტები</p></th>
+<th class="head"><p>მაგალითები</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>U+0000 დან U+007F-მდე</p></td>
+<td><p>1 ბაიტი</p></td>
+<td><p>ASCII (მაგ: A, a, 1, &#64;)</p></td>
+</tr>
+<tr class="row-odd"><td><p>U+0080 დან U+07FF-მდე</p></td>
+<td><p>2 ბაიტი</p></td>
+<td><p>ლათინური, ბერძნული სიმბოლოები</p></td>
+</tr>
+<tr class="row-even"><td><p>U+0800 დან U+FFFF-მდე</p></td>
+<td><p>3 ბაიტი</p></td>
+<td><p>სხვადასხვა ენები (მაგ: ქართული, არაბული, ჩინური)</p></td>
+</tr>
+<tr class="row-odd"><td><p>U+10000 დან U+10FFFF-მდე</p></td>
+<td><p>4 ბაიტი</p></td>
+<td><p>ემოჯი, იშვიათი ისტორიული ანბანები</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>*მეტი ინფორმაციის გასაგებად შეგიძლია გამოიყენო ChatGPT ან Google ; )</p>
+</section>
+</section>
+</section>
+<section id="id14">
+<h3>3.  დროშის სურათი<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<p><img alt="kaflag" src="../../../_images/kaflag.png" /></p>
+<p>ჩვენი დროშის სურათი არის 15x11 ზომისაა, სადაც თითოეულ პიქსელს (უჯრას) აქვს შესაბამისი ფერი.</p>
+<hr class="docutils" />
+<section id="rgb">
+<h4>3.1 დაწერე პირველი მწკრივის RGB მონაცემები.<a class="headerlink" href="#rgb" title="Link to this heading">#</a></h4>
+<p><strong>ამოწერე მესამე მწკრივი როგორც RGB მონაცემები. თითოეული ფერი შედგება 3 ნაზავიგან (წითელი, მწვანე, ლურჯი).</strong></p>
+<p><img alt="row1" src="../../../_images/row1.png" /></p>
+<p>მაგალითად ლურჯი პიქსელი ჩაიწერება შემდეგნაირად:</p>
+<div class="math notranslate nohighlight">
+\[
+0, 0, 255 \rightarrow 00000000 \: 00000000 \: 11111111.
+\]</div>
+</section>
+<section id="id15">
+<h4>3.2 ინფორმაციის კომპრესირება<a class="headerlink" href="#id15" title="Link to this heading">#</a></h4>
+<p>თუ ამ სახით ამოვწერთ ინფორმაციას (1 პიქსელი = 24 ბიტი), მაშინ დაგვჭირდება ზედმეტად პიქსელის ინფორმაციის გამეორება და ფოტოს ინფორმაცია ზომაში ტყუილად გაიზრდება. მაგალითად, თუ მეექვსე მწკრივს ამოვწერთ, მოგვიწევს წითელი პიქსელი <span class="math notranslate nohighlight">\((255, 0, 0)\)</span> გავიმეოროთ 15 ჯერ.</p>
+<p>თანამედროვე ფოტოს ფორმატები (.png, .jpeg, .HEIF…) იყენებენ ჭკვიანურ სისტემებს, რომ რაც შეიძლება ნაკლები ბიტების გამოყენებით შეინახონ ფოტოები (image compression). მაგალითად, ზოგიერთი ფორმატის მუშაობის პრინციპი არის, აღმოაჩინოს გამეორებული ფრაგმენტი და ინფორმაციის გამეორების ნაცვლად, უბრალოდ დაწეროს რომ ეს ფრაგმენტი N_ჯერ მეორდება.</p>
+<p>მაგალითად ჩვენი მეექვსე სვეტი ნაცვლად სათითაოდ 15 ჯერ გაწერისა (15 <span class="math notranslate nohighlight">\(\times\)</span> 24 = 360 ბიტი), შეგვიძლია დავწეროთ ასეთ ფორმატში:</p>
+<div align="center">
+<p>[ფერის RGB მნიშვნელობა] [გამეორების რაოდენობა] <br /></p>
+<p>[255 0 0] [15] <br /></p>
+<p>[11111111 00000000 00000000] [0000 1111] <br /></p>
+</div>
+<p>დაგვჭირდა 24 ბიტი პიქსელისთვის + 8 ბიტი რაოდენობის აღსანიშნად = 32 ბიტი.</p>
+<p>შედეგი? 360 <span class="math notranslate nohighlight">\(\rightarrow\)</span> 32 ბიტამდე დაყვანით გამოვიყენეთ <span class="math notranslate nohighlight">\(11 \frac{1}{4}\)</span>_ჯერ ნაკლები ბიტები!</p>
+<p>ამ ალგორითმს ეწოდება RLE - Run-Length Encoding. რამდენიმე ფორმატი მას იყენებს, თუმცა არსებობს ბევრად კომპლექსური სისტემები, რომლებიც უფრო ეფექტურად ინახავენ ფოტოებს.</p>
+<p><em>მაგალითად, შეგიძლიათ მოიძიოთ ინფორმაცია JPEG ფორმატზე რომელიც აფიქსირებს და აიგნორებს ინფორმაციას (ფერებს), რომლის აღქმა ადამიანის თვალს ისედაც არ შეუძლია!</em></p>
+<p><strong>ახლა ამოწერე მესამე მწკრივი RLE კოდირების სისტემით.</strong></p>
+<p><img alt="row1" src="../../../_images/row1.png" /></p>
+</section>
+<section id="id16">
+<h4>3.3 კიდევ უფრო კომპრესირება!<a class="headerlink" href="#id16" title="Link to this heading">#</a></h4>
+<p>RLE ასევე იყენებს ინდექსირების მეთოდს - დააკვირდება, თუ რა ფერები არის გამოყენებული ფოტოზე და დანომრავს მათ:</p>
+<p>მაგალითად ამ ფოტოში არის გამოყენებული წითელი და თეთრი. ვთქვათ წითელი იყოს ფერი 0 და თეთრი ფერი 1.</p>
+<p>ინდექსი:</p>
+<p>0: 255, 0, 0
+1: 255, 255, 255</p>
+<p>ახლა კი ფერის მთლიანად გაწერის ნაცვლად გავწეროთ უბრალოდ მისი ნომრით ინდექსიდან.</p>
+<p>[ნომერი][რაოდენობა]</p>
+<p>მესამე მწკრივი გახდება შემდეგნაირი:</p>
+<div class="math notranslate nohighlight">
+\[
+1:2 \quad 0:3 \quad 1:2 \quad 0:1 \quad 1:2 \quad 0:3 \quad 1:2
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+00000001 \; 00000010 \quad 00000000 \; 00000011 ...
+\]</div>
+<p>ასე ინფორმაცია კიდევ უფრო ნაკლებ ადგილს დაიკავებს!</p>
+<p><strong>ახლა კი იგივე პრინციპით გააციფრულე შემდეგი მწკრივი:</strong></p>
+<p><img alt="row2" src="../../../_images/row2.png" /></p>
+</section>
+</section>
+</section>
+<section id="id17">
+<h2>მზად არის!<a class="headerlink" href="#id17" title="Link to this heading">#</a></h2>
+<p>ესეც ასე! ჩაკრულო, სიტყვები და დროშა მზად არის. ტყემალსა და ჩურჩხელებს ჩავალაგებთ და ქართული ვოიაჟერი მზად არის გასაფრენად!</p>
+<p><strong>Roger, ready to go Houston! 🚀</strong></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/part1/exercises"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ghost.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">1.1 კოდი მოჩვენებისგან</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="foodCollect.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">2.1 ჩაიბარე ამანათი</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">შესავალი</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ოქროს ფირფიტა</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">ქართული ვოიაჟერი!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">დავალება</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1. ჩაკრულოს ფრაგმენტი</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">მოიცა, აუდიო როგორ გამოვსახო?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.1 ამოიწერე ნიმუშები ათობით სისტემაში</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.2 ორობითში გადაყვანა</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">უარყოფითი რიცხვების გამოსახვა</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#s-complement-representation">2’s Complement Representation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">2. ტექსტი</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">UNICODE მუშაობის პრინციპი</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hexadecimal">თექვსმეტობითი სისტემა (Hexadecimal)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">2.1 ამოწერე სიტყვები UNICODE სისტემის დახმარებით</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">ბონუს ცოდნა</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">3.  დროშის სურათი</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rgb">3.1 დაწერე პირველი მწკრივის RGB მონაცემები.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">3.2 ინფორმაციის კომპრესირება</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">3.3 კიდევ უფრო კომპრესირება!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">მზად არის!</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By QBit Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
