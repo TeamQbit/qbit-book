@@ -23,7 +23,7 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: |
-          pip install jupyter-book ghp-import
+          pip install -r requirements.txt
 
       # Step 4: Build the Jupyter Book
       - name: Build the Jupyter Book
