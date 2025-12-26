@@ -14,7 +14,7 @@
 4. **`put()`**  
    კარლო ათავსებს აგურს იმ ადგილზე, სადაც იმყოფება.  
 
-<iframe src="https://rezi-gelenidze.github.io/karlo-ide/demo.html" width="500px" height="500px"></iframe>
+<iframe src=" https://rgelenidze-godaddy.github.io/karlo-ide/demo.html" width="500px" height="500px"></iframe>
 
 ---
 
@@ -98,4 +98,4 @@ def main():
 ### გავარჯიშება
 
 იმუშავეთ კარლოსთან ქვემოთ მოცემული სავარჯიშო რუკის გამოყენებით:  
-<iframe src="https://rezi-gelenidze.github.io/karlo-ide/?task=playground" width="100%" height="500px"></iframe>
+<iframe src=" https://rgelenidze-godaddy.github.io/karlo-ide/?task=playground" width="100%" height="500px"></iframe>

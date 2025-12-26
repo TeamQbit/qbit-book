@@ -17,6 +17,6 @@
 
 დაეხმარე კარლოს!
 
-<iframe src="https://rezi-gelenidze.github.io/karlo-ide/?task=doubleKarlo" width="100%" height="500px"></iframe>
+<iframe src=" https://rgelenidze-godaddy.github.io/karlo-ide/?task=doubleKarlo" width="100%" height="500px"></iframe>
 
 გჭირდება დახმარება? იხილე [**კარლოს დოკუმენტაცია**](../playground.md)
