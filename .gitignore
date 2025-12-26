@@ -89,3 +89,6 @@ coverage.xml
 
 # Temporary backups
 *~
+
+# MyST build outputs
+_build
